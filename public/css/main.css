@@ -1,3 +1,13 @@
-h1{
-    color: blue;
-}
+*{
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+
+  }
+
+  #nav-head {
+    font-size: 2rem;
+
+  }
+  #des-1{
+    line-height: 1.8em;
+  }
