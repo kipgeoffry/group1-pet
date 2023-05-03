@@ -9,13 +9,16 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
   
-/*
- To be updated on the EJS File is Ready
- res.render("home", { title: "Home Page" });
- */
- console.log("Home page");
-  res.send("Welcome to Pet Website <strong>Home Page!</strong>" + "<p><a href =/signup>Sign Up</a></p>" + "<p><a href =/login>Login</a></p>");
-  res.end();
+//  To be updated on the EJS File is Ready
+ res.render("home", { 
+  title: "Group1 Pet",
+  heading:"Our Pet"
+
+});
+
+//  console.log("Home page");
+//   res.send("Welcome to Pet Website <strong>Home Page!</strong>" + "<p><a href =/signup>Sign Up</a></p>" + "<p><a href =/login>Login</a></p>");
+//   res.end();
 });
 
 module.exports = router;

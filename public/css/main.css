@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+
+  }
+
+  html{
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #nav-head {
+    font-size: 2rem;
+
+  }
+  #des-1{
+    line-height: 1.9em;
+  }
