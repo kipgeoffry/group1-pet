@@ -7,13 +7,13 @@ const express = require("express");
 
 const router = express.Router();
 
+var isGetMethod; //Alert EJS if the Method is POST or GET - To use SAME EJS file for both POST and Get Requests
 router.get("/signup", (req, res) => {
  /*
-  To be updated when the EJS Files are ready 
-   res.render("signup", { title: "Sign Up Page" });
+  EJS SIGN UP GET METHOD
  */
+  res.render("signup", { title: "Sign Up",  heading:"Our Pet", isGetMethod:true});
    console.log("Sign Up page");
-  res.send("Please Sign Up here. <strong>Sign Up Page!</strong>" + "<p><a href =/login>Log In</a></p>" + "<p><a href =/>Home</a></p>");
   res.end();
 });
 
