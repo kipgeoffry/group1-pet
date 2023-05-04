@@ -18,17 +18,22 @@ router.get("/signup", (req, res) => {
 });
 
 router.post("/signup", (req, res) => {
-  
-/*
-   To be updated when the EJS Files are ready 
-    var data = {
-      name: req.body.name,
-      password: req.body.password,
-    };
-    console.log(res);
-    res.render("output", { title: "Display Output", data: data});
 
+  /*
+  EJS SIGN UP POST METHOD
  */
+  
+  console.log(req.body);
+  var details = {
+  name: req.body.name,
+  email: req.body.email,
+  phone:  req.body.phone,
+  date: req.body.date,
+  gender: req.body.gender,
+ }
+
+ res.render("signup", { title: "Sign UP", heading:"Our Pet",isGetMethod:false, data: details});
+ res.end();
 });
 
 module.exports = router;

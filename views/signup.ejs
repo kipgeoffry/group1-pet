@@ -47,7 +47,102 @@
                     <div class="card">
                       <div class="card-body">
                         
-                           <P>Sign Up details here</P>
+                           <!-- Display Form if the Request is GET -->
+ <%if(isGetMethod){%> 
+      <p>Please provide below details to Sign Up as a User:</p>
+          <form id="form" method="post" action="/signup">
+            <div class="mb-0">
+              <label for="name" class="form-label">Name:</label>
+              <input
+                class="form-control input-sm"
+                id="inputsm"
+                type="text"
+                name="name"
+                value=""
+                placeholder=""
+                required
+              />
+              <div id="" class="form-text">Enter Your Name</div>
+            </div>
+            <div class="mb-0">
+              <label for="nickname" class="form-label">Email:</label>
+              <input
+                class="form-control input-sm"
+                id="inputsm"
+                type="email"
+                name="email"
+                value=""
+                placeholder=""
+                required
+              />
+              <div id="" class="form-text">Enter Your Email</div>
+            </div>
+            <div class="mb-0">
+              <label for="phone" class="form-label">Phone Number:</label>
+              <input
+                class="form-control input-sm"
+                id="inputsm"
+                type="number"
+                name="phone"
+                value=""
+                min="1000"
+                max="9999"
+                placeholder=""
+                required
+              />
+              <div id="" class="form-text">Enter Your Phone Number</div>
+            </div>
+            <div class="mb-0">
+              <label for="date" class="form-label">Date of Birth:</label>
+              <input
+                class="form-control input-sm"
+                id="inputsm"
+                type="date"
+                name="date"
+                value=""
+                placeholder=""
+                required
+              />
+              <div id="" class="form-text">Enter Your Date of Birth</div>
+            </div>
+            <div class="mb-0">
+              <!-- Radio button to choose gender  -->
+              <label for="Gender" class="form-label">Select your Gender:</label
+              ><br />
+               
+              <input type="radio" id="gender" name="gender" value="male" required />
+                <label for="male">Male</label><br />
+               
+              <input
+                type="radio"
+                id="gender"
+                name="gender"
+                value="female"
+                required
+              />
+                <label for="female">Female</label><br />
+              <div id="" class="form-text">
+                Choose your Gender as either Male or Female
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary h6">Submit</button>
+          </form>
+    <%}%> 
+     <!-- Display Result if the Request Method is POST -->
+     <%if(!isGetMethod){%> 
+      <div>
+        <p>Your sign Up details were captured as below:</p>
+             <ul>
+               <li>Name : <%= data.name %></li>
+               <li>Email : <%= data.email %></li>
+               <li>Phone : <%= data.phone %></li>
+               <li>Gender : <%= data.gender %></li>
+               <li>Date of Birth: <%= data.date %></li>
+             </ul>       
+             <p>Thank you for your subscription.</p>
+       </div>
+      <%}%> 
+    <br />
                         
                         
                       </div>
