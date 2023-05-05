@@ -43,87 +43,40 @@
         </div>
         <section>
             <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
+                <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4">
                     <div class="card">
                       <div class="card-body">
                         
                            <!-- Display Form if the Request is GET -->
  <%if(isGetMethod){%> 
-      <p>Please provide below details to Sign Up as a User:</p>
-          <form id="form" method="post" action="/signup">
+      <p><strong>Login :</strong></p>
+          <form id="form" method="post" action="/login">
             <div class="mb-0">
-              <label for="name" class="form-label">Name:</label>
+              <label for="username" class="form-label">User Name:</label>
               <input
                 class="form-control input-sm"
                 id="inputsm"
                 type="text"
-                name="name"
+                name="username"
                 value=""
                 placeholder=""
                 required
               />
-              <div id="" class="form-text">Enter Your Name</div>
+              <div id="" class="form-text">Enter Your User Name</div>
             </div>
             <div class="mb-0">
-              <label for="nickname" class="form-label">Email:</label>
+              <label for="password" class="form-label">Password:</label>
               <input
                 class="form-control input-sm"
                 id="inputsm"
-                type="email"
-                name="email"
+                type="password"
+                name="password"
                 value=""
                 placeholder=""
                 required
               />
-              <div id="" class="form-text">Enter Your Email</div>
-            </div>
-            <div class="mb-0">
-              <label for="phone" class="form-label">Phone Number:</label>
-              <input
-                class="form-control input-sm"
-                id="inputsm"
-                type="number"
-                name="phone"
-                value=""
-                min="1000"
-                max="9999"
-                placeholder=""
-                required
-              />
-              <div id="" class="form-text">Enter Your Phone Number</div>
-            </div>
-            <div class="mb-0">
-              <label for="date" class="form-label">Date of Birth:</label>
-              <input
-                class="form-control input-sm"
-                id="inputsm"
-                type="date"
-                name="date"
-                value=""
-                placeholder=""
-                required
-              />
-              <div id="" class="form-text">Enter Your Date of Birth</div>
-            </div>
-            <div class="mb-0">
-              <!-- Radio button to choose gender  -->
-              <label for="Gender" class="form-label">Select your Gender:</label
-              ><br />
-               
-              <input type="radio" id="gender" name="gender" value="male" required />
-                <label for="male">Male</label><br />
-               
-              <input
-                type="radio"
-                id="gender"
-                name="gender"
-                value="female"
-                required
-              />
-                <label for="female">Female</label><br />
-              <div id="" class="form-text">
-                Choose your Gender as either Male or Female
-              </div>
+              <div id="" class="form-text">Enter Your Password </div>
             </div>
             <button type="submit" class="btn btn-primary h6">Submit</button>
           </form>
@@ -131,15 +84,12 @@
      <!-- Display Result if the Request Method is POST -->
      <%if(!isGetMethod){%> 
       <div>
-        <p>Your sign Up details were captured as below:</p>
+        <p>Your have Successfully Logged In with below credentials:</p>
              <ul>
-               <li>Name : <%= data.name %></li>
-               <li>Email : <%= data.email %></li>
-               <li>Phone : <%= data.phone %></li>
-               <li>Gender : <%= data.gender %></li>
-               <li>Date of Birth: <%= data.date %></li>
+               <li>User Name : <%= data.username %></li>
+               <li>Password (Plain Text) : <%= data.password %></li>
              </ul>       
-             <p>Thank you for your subscription.</p>
+             <p>Welcome and continue enjoying our services!</p>
        </div>
       <%}%> 
     <br />
@@ -148,15 +98,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6">
-                    <div class="card" style="width: 30rem;">
-                        <img src="images/puppy-1903313__340.jpg" class="img-fliud" alt="dog image">
-            
-                      </div>
-                      
-                  </div>
-              
-
+                  <div class="col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
             </div>
         </section>
         

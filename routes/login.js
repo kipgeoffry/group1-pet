@@ -12,7 +12,7 @@ var isGetMethod; //Alert EJS if the Method is POST or GET - To use SAME EJS file
 router.get("/login", (req, res) => {
 
 /*
-  EJS SIGN UP GET METHOD
+  EJS login GET METHOD
  */
   res.render("login", { title: "Login Up",  heading:"Our Pet", isGetMethod:true});
   console.log("Login page");
@@ -21,16 +21,16 @@ router.get("/login", (req, res) => {
 });
 
 router.post("/login", (req, res) => {
-  /*
-   To be updated when the EJS Files are ready - to proces submitted data
-    var data = {
-      name: req.body.name,
-      password: req.body.password,
-    };
-    console.log(res);
-    res.render("output", { title: "Display Output", data: data});
-
+ /*
+  EJS Login POST METHOD
  */
+  console.log(req.body);
+  var details = {
+  username: req.body.username,
+  password: req.body.password,
+
+ };
+    res.render("login", { title: "Login", heading:"Our Pet",isGetMethod:false, data: details});
  
 });
 
