@@ -15,8 +15,6 @@ router.get("/login", (req, res) => {
   EJS login GET METHOD
  */
   res.render("login", { title: "Login Up",  heading:"Our Pet", isGetMethod:true});
-  console.log("Login page");
-
  res.end();
 });
 
