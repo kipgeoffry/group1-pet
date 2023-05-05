@@ -23,7 +23,7 @@ Skills learnt in the previous weeks of study- [jQuery][5], [JavaScript][8],[HTML
 [8]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript> "JavaScript"
 
 ### Live Link
- To be updated upon deployment
+ https://group-one-pet.onrender.com/
  
 ### BDD
   As users/Contributors, we would like to;  
@@ -51,31 +51,19 @@ Skills learnt in the previous weeks of study- [jQuery][5], [JavaScript][8],[HTML
 
 ### Setup and Installations Instructions
  1. To use the web application:  
-    - Access the **[Live link](TO BE UPDATED)** on your favourite browser  
+    - Access the **[Live link](https://group-one-pet.onrender.com/)** on your favourite browser  
     - Navigate the entire website and ensure all middleware routes are working  
     - Test the responsiveness of the website with Mobile and desktop devices  
 
      
- 2. To develop a similar web application or make improvements: 
-    - Ensure you have installed [google chrome](https://www.google.com/chrome/) browser 
-    - Ensure you have installed a code editor like Visual Studio and [git](https://git-scm.com/download/win)
-    - Create a project folder preferably from command line  
-       `mkdir your_project_folder`
-    - Navigate to your project folder  
-       `cd your_project_folder`  
+ 2. Contributions & make improvements:   
     - Clone the Node JS App source code into your project folder    
-       `git clone https://github.com/kipgeoffry/group1-pet.git`
-    - Use the Visual Studio code editor to open, review and modify the code   
-       `code .`    
+       `git clone https://github.com/kipgeoffry/group1-pet.git`   
     - Install all the project dependencies      
        `npm install`   
-    - Locally test the web application using the Live Server 
-    - Use the Chrome browser _inspect_ and _console_ functionalities to test jQuery functions, code and device responsiveness	
-    - Use [Bootstrap](https://getbootstrap.com/) tool to help improve on the look and feel of the web application   
-    - Request to be invited as a contributor and create your own branch once the invitation is approved.   
-    - Request to merge new improvements into the master branch once testing is compled and all bugs fixed.     
-    - You may also identify and suggest bugs that require fixing by raising an issue on Github.  
-	 - Finally host your Web Application on domain hoster or cloud provide of your choice!   
+    - Locally develop, improve and test the web application  
+    - Request to be invited as a contributor and create your own branch & merge to the develop branch once invitation is approved.   
+    -  Merges to master branch will have to be approved before the improvements are effected on the live link.   
    
    
 ### Contact Information 
@@ -87,11 +75,4 @@ Skills learnt in the previous weeks of study- [jQuery][5], [JavaScript][8],[HTML
 
 
 ###  License and Copyright Information
-#### MIT License
-Copyright (c) 2023 Eliud Gateri, Geoffrey Kipchumba, Hellen Omwono & Kevin Muchiri 
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:  
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+This project is licensed under the MIT License - see the `LICENSE` file for details.

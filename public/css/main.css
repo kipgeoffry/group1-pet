@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+
+  }
+
+  html{
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #nav-head {
+    font-size: 2rem;
+
+  }
+  #des-1{
+    line-height: 1.9em;
+  }
+
+
+
+
+
+/* font size of form text  */
+.form-text {
+  font-size: x-small;
+  color: f2f2f2;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* font size of form label  */
+.form-label {
+  font-size: medium;
+  margin: 0;
+  padding: 0;
+}
+
+/* margin of form input fields  */
+.mb-3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* style for landing page instructions */
+.text-list li {
+  font-style: italic;
+  color: darkgreen;
+  font-size: small;
+  text-align: left;
+}
+/* style for input fields */
+.text-muted {
+  font-size: small;
+  text-align: left;
+}
