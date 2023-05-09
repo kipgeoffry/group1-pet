@@ -16,7 +16,7 @@
   </title>
 </head>
 <body>
-  <div class="container" >
+  <div class="container" style="height: fit-content">
     <div class="row">
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid row">
@@ -96,9 +96,16 @@
       </div>
     </div>
     </section>
-    <footer>
-      <%- include('footer');%>
-     </footer>
+    <div class="row">
+      <div class="card fixed-bottom bg-body-secondary text-center row">
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>"A dog is the only thing on earth that loves you more than you love yourself.".</p>
+            <footer class="blockquote-footer"> - Josh Billings.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
