@@ -60,44 +60,47 @@
               <%if(isGetMethod){%>
                 <p>Please provide below details to Sign Up:</p>
                 <form id="form" method="post" action="/signup">
-                  <div class="mb-0">
+                  <div class="mb-0 pt-2">
                     <label for="name" class="form-label">Name:</label>
-                    <input class="form-control input-sm" id="inputsm" type="text" name="name" value="" placeholder=""
+                    <input class="form-control input-sm" id="inputsm" type="text" name="name" value="" placeholder="Enter Your Name"
                       required />
-                    <div id="" class="form-text">Enter Your Name</div>
+                    <!-- <div id="" class="form-text">Enter Your Name</div> -->
                   </div>
-                  <div class="mb-0">
+                  <div class="mb-0 pt-2">
                     <label for="nickname" class="form-label">Email:</label>
-                    <input class="form-control input-sm" id="inputsm" type="email" name="email" value="" placeholder=""
+                    <input class="form-control input-sm" id="inputsm" type="email" name="email" value="" placeholder="Enter Your Email"
                       required />
-                    <div id="" class="form-text">Enter Your Email</div>
+                    <!-- <div id="" class="form-text">Enter Your Email</div> -->
                   </div>
-                  <div class="mb-0">
+                  <div class="mb-0 pt-2">
                     <label for="phone" class="form-label">Phone Number:</label>
-                    <input class="form-control input-sm" id="inputsm" type="number" name="phone" value="" min="1000"
-                      max="9999" placeholder="" required />
-                    <div id="" class="form-text">Enter Your Phone Number</div>
+                    <input class="form-control input-sm" id="inputsm" type="number" name="phone" value="" min="0000000000"
+                      max="9999999999" placeholder="Enter Your Phone Number" required />
+                    <!-- <div id="" class="form-text">Enter Your Phone Number</div> -->
                   </div>
-                  <div class="mb-0">
+                  <div class="mb-0 pt-2">
                     <label for="date" class="form-label">Date of Birth:</label>
-                    <input class="form-control input-sm" id="inputsm" type="date" name="date" value="" placeholder=""
+                    <input class="form-control input-sm" id="inputsm" type="date" name="date" value="" placeholder="Enter Your Date of Birth"
                       required />
-                    <div id="" class="form-text">Enter Your Date of Birth</div>
+                    <!-- <div id="" class="form-text">Enter Your Date of Birth</div> -->
                   </div>
-                  <div class="mb-0">
+                  <div class="mb-0 pt-2">
                     <!-- Radio button to choose gender  -->
                     <label for="Gender" class="form-label">Select your Gender:</label><br />
-                     
+      
                     <input type="radio" id="gender" name="gender" value="male" required />
-                      <label for="male">Male</label><br />
-                     
+                    <label for="male">Male</label><br />
+          
                     <input type="radio" id="gender" name="gender" value="female" required />
-                      <label for="female">Female</label><br />
-                    <div id="" class="form-text">
+                    <label for="female">Female</label><br />
+                    <!-- <div id="" class="form-text">
                       Choose your Gender as either Male or Female
-                    </div>
+                    </div>   -->
                   </div>
-                  <button type="submit" class="btn btn-primary h6">Submit</button>
+                  <div class="pt-3 pb-0">
+                    <button type="submit" class="btn btn-primary h6">Submit</button>
+                  </div>
+                  
                 </form>
                 <%}%>
                   <!-- Display Result if the Request Method is POST -->
@@ -127,15 +130,8 @@
       </div>
     </div>
   </section>
-  <div class="row">
-    <div class="card">
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>"A dog is the only thing on earth that loves you more than you love yourself.".</p>
-          <footer class="blockquote-footer"> - Josh Billings.</footer>
-        </blockquote>
-      </div>
-    </div>
-  </div>
+  <footer>
+    <%- include('footer');%>
+   </footer>
 </body>
 </html>
