@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
   
 //  To be updated on the EJS File is Ready
  res.render("home", { 
-  title: "Group1 Pet",
+  title: "Home",
   heading:"Our Pet"
 
 });
